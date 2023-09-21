@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание 1</title>
+    <style>
+        /* Общие стили для контейнера */
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Стили для прямоугольников */
+        .rectangle {
+            background-color: #3498db;
+            border: 1px solid #2980b9;
+            position: relative;
+        }
+
+        /* Стили для первого прямоугольника */
+        .rectangle:first-child {
+            width: 70vw; /* 70% ширина окна браузера */
+            height: 70vh; /* 70% высота окна браузера */
+        }
+
+        /* Стили для последующих прямоугольников */
+        .rectangle + .rectangle {
+            width: 70%; /* Ширина следующего прямоугольника 70% от предыдущего */
+            height: 70%; /* Высота следующего прямоугольника 70% от предыдущего */
+        }
+    </style>
+</head>
+<body>
+     <!-- Вложенные блоки-прямоугольники -->
+     <div class="rectangle"></div>
+     <div class="rectangle"></div>
+     <div class="rectangle"></div>
+     <div class="rectangle"></div>
+     <div class="rectangle"></div>
+</body>
+</html>

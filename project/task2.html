@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание 2</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            height: 150px;
+            background-color: #3498db;
+            flex: 0 0 auto;
+        }
+
+        main {
+            display: flex;
+            flex: 1;
+        }
+
+        /* Меню (левая колонка) */
+        nav {
+            width: 200px;
+            height: 300px;
+            background-color: #e74c3c;
+        }
+
+        /* Контент (правая колонка) */
+        article {
+            flex: 1;
+            min-height: 400px;
+            background-color: #2ecc71;
+        }
+
+        /* Подвал/футер */
+        footer {
+            height: 100px;
+            background-color: #f1c40f;
+            flex: 0 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <header>Шапка</header>
+    <main>
+        <nav>Меню</nav>
+        <article>Контент</article>
+    </main>
+    <footer>Подвал</footer>
+</body>
+</html>

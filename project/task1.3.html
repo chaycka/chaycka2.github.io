@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание 1.3</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .rectangle {
+            position: absolute;
+        }
+        .corner-rectangle {
+            width: 45%; /* Ширина 45% от ширины окна браузера */
+            height: 45%; /* Высота 45% от высоты окна браузера */
+        }
+        .center-rectangle {
+            width: 45%; /* Ширина 45% от ширины окна браузера */
+            height: 45%; /* Высота 45% от высоты окна браузера */
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #FEE3EC;
+        }
+        .top-left {
+            top: 0;
+            left: 0;
+            background-color: #F9C5D5;
+        }
+
+        .top-right {
+            top: 0;
+            right: 0;
+            background-color: #F999B7;
+        }
+
+        .bottom-left {
+            bottom: 0;
+            left: 0;
+            background-color: #F2789F;
+        }
+
+        .bottom-right {
+            bottom: 0;
+            right: 0;
+            background-color: #E687A7;
+        }
+    </style>
+</head>
+<body>
+    <div class="rectangle corner-rectangle top-left"></div>
+    <div class="rectangle corner-rectangle top-right"></div>
+    <div class="rectangle corner-rectangle bottom-left"></div>
+    <div class="rectangle corner-rectangle bottom-right"></div>
+    <div class="rectangle center-rectangle"></div>
+</body>
+</html>

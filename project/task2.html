@@ -14,34 +14,54 @@
 
         header {
             height: 150px;
-            background-color: #3498db;
+            background-color: #F2789F;
             flex: 0 0 auto;
+            margin-bottom: 0;
+            display: flex;
+            align-items: center; 
+            justify-content: center; 
         }
 
         main {
             display: flex;
             flex: 1;
+            margin: 0;
         }
 
-        /* Меню (левая колонка) */
         nav {
             width: 200px;
             height: 300px;
-            background-color: #e74c3c;
+            background-color: #F9C5D5;
+            margin-right: 0;
+            display: flex;
+            align-items: center; 
+            justify-content: center; 
         }
 
-        /* Контент (правая колонка) */
         article {
             flex: 1;
             min-height: 400px;
-            background-color: #2ecc71;
+            background-color: #FEE3EC;
+            display: flex;
+            align-items: center; 
+            justify-content: center;
         }
 
-        /* Подвал/футер */
         footer {
             height: 100px;
-            background-color: #f1c40f;
+            background-color: #E687A7;
             flex: 0 0 auto;
+            margin-top: 0;
+            display: flex;
+            align-items: center; 
+            justify-content: center;
+        }
+        
+        /* Скрыть все элементы кроме контента при печати */
+        @media print {
+            header, nav, footer {
+                display: none;
+            }
         }
     </style>
 </head>

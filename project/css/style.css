@@ -3,6 +3,9 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Минимальная высота контейнера, чтобы подвал был прижат к нижней части окна */
 }
 
 header {
@@ -27,6 +30,19 @@ nav a {
     text-decoration: none;
     color: #F2789F;
     font-weight: bold;
+}
+
+main {
+    background-color: #FEE3EC;
+    flex: 1; /* Растягиваем основное содержание, чтобы занять доступное пространство */
+    display: flex;
+    justify-content: center; /* Выравниваем содержимое по горизонтали по центру */
+    align-items: center; /* Выравниваем содержимое по вертикали по центру */
+}
+
+main img {
+    max-width: 100%; /* Картинка адаптируется к размеру родительского элемента */
+    height: auto; /* Сохраняет пропорции картинки */
 }
 
 footer {

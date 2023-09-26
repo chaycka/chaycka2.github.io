@@ -4,72 +4,110 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Задание 3</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #ffffff;
+            color: #50372b;
+            padding: 20px;
+        }
+
+        .logo-container {
+            text-align: center;
+            position: relative; /* Добавляем позиционирование */
+        }
+
+        .logo-container img {
+            max-width: 10%;
+            height: auto;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        
+        h1, h2 {
+            font-family: Georgia, serif;
+            color: #50372b;
+            font-style: italic;
+        }
+
+        .custom-title {
+            font-size: 50pt;
+        }
+
+        /* Media queries for responsive design */
+        @media (max-width: 768px) {
+            .logo-container {
+                text-align: left;
+            }
+
+            nav ul {
+                text-align: left;
+                padding: 10px 0;
+            }
+
+            nav ul li {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
-        Roga    &    Kopyta
-        International worldwide cooperation
-        for horns and hooves storage
-        <img src="images/logo.png" alt="logo">
+        <div class="logo-container">
+            <img src="images/logo.png" alt="logo">
+            <h1 class="custom-title">Roga    &    Kopyta</h1>
+            <p>International worldwide cooperation<br>for horns and hooves storage</p>
+        </div>
         <nav>
-            HORNS STORAGE
-            HOOVES STORAGE
-            OUR ACHIEVMENTS
-            SEASON PRICES
-            CONTACTS
+            <ul>
+                <li>HORNS STORAGE</li>
+                <li>HOOVES STORAGE</li>
+                <li>OUR ACHIEVEMENTS</li>
+                <li>SEASON PRICES</li>
+                <li>CONTACTS</li>
+            </ul>
         </nav>
     </header>
     <main>
-        Our history
-        "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium 
-doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore 
-veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam 
-voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur 
-magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam 
-est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non 
-numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat 
-voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis 
-suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum
-iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, 
-vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
-<img src="images/photo.png" alt="photo">
-Horns
-"Sed ut perspiciatis unde omnis iste 
-natus error sit voluptatem accusantium 
-doloremque laudantium, totam rem 
-aperiam, eaque ipsa quae ab illo 
-inventore veritatis et quasi architecto 
-beatae vitae dicta sunt explicabo. Nemo 
-enim ipsam voluptatem quia voluptas sit 
-aspernatur aut odit aut fugit, sed quia 
-consequuntur magni dolores eos qui 
-ratione voluptatem sequi nesciunt.
-Hooves
-"Sed ut perspiciatis unde omnis iste 
-natus error sit voluptatem accusantium 
-doloremque laudantium, totam rem 
-aperiam, eaque ipsa quae ab illo 
-inventore veritatis et quasi architecto 
-beatae vitae dicta sunt explicabo. Nemo 
-enim ipsam voluptatem quia voluptas sit 
-aspernatur aut odit aut fugit, sed quia 
-consequuntur magni dolores eos qui 
-ratione voluptatem sequi nesciunt.
-Achievments
-"Sed ut perspiciatis unde omnis iste 
-natus error sit voluptatem accusantium 
-doloremque laudantium, totam rem 
-aperiam, eaque ipsa quae ab illo 
-inventore veritatis et quasi architecto 
-beatae vitae dicta sunt explicabo. Nemo 
-enim ipsam voluptatem quia voluptas sit 
-aspernatur aut odit aut fugit, sed quia 
-consequuntur magni dolores eos qui 
-ratione voluptatem sequi nesciunt. 
+        <h2>Our History</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+        <img src="images/photo.png" alt="photo">
+        <h2>Horns</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+        <h2>Hooves</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+        <h2>Achievements</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
     </main>
     <footer>
         Roga & Kopyta
-        International worlwide cooperation for horns and hooves storage
+        International worldwide cooperation for horns and hooves storage
         (c) 2013. All rights reserved
     </footer>
 </body>

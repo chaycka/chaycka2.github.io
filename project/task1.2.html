@@ -7,27 +7,27 @@
     <style>
         body, html {
             height: 100%;
-            margin: 0; /* Отступы по умолчанию на ноль */
+            margin: 0;
             display: flex; 
-            align-items: center; /* Выравнивание элементов по центру по вертикали относительно окна браузера */
-            justify-content: center; /* Выравнивание элементов по центру по горизонтали относительно окна браузера */
+            align-items: center;
+            justify-content: center;
         }
         .rectangle {
             background-color: #FEE3EC;
             border: 2px solid #F999B7;
-            position: relative; /* Относительное позиционирование */
+            position: relative;
         }
         .rectangle:first-child {
-            width: 70vw; /* 70% ширина окна браузера */
-            height: 70vh; /* 70% высота окна браузера */
+            width: 70vw;
+            height: 70vh;
         }
         .rectangle > .rectangle {
-            width: 70%; /* Ширина следующего прямоугольника 70% от размеров родительского */
-            height: 70%; /* Высота следующего прямоугольника 70% от размеров родительского */
+            width: 70%;
+            height: 70%;
             position: absolute;
             top: 50%;
             left: 50%;
-            transform: translate(-50%, -50%); /* Трансформация, чтобы точка центрирования была в середине вложенных прямоугольников */
+            transform: translate(-50%, -50%);
         }
     </style>
 </head>
